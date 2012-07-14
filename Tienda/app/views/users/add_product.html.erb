@@ -1,0 +1,5 @@
+<h2>Bienvenido, adicione sus productos, <%= @user.name %> </h2>
+<%= simple_form_for(@user) do |f| %>
+	<%= f.association :products %> <br />
+	<%= f.button :submit %>
+<% end %>
